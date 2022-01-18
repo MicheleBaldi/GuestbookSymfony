@@ -11,3 +11,15 @@ A [Docker](https://www.docker.com/)-based installer and runtime for the [Symfony
 3. Run `docker-compose up` (the logs will be displayed in the current shell)
 4. Open `https://localhost` in your favorite web browser and [accept the auto-generated TLS certificate](https://stackoverflow.com/a/15076602/1352334)
 5. Run `docker-compose down --remove-orphans` to stop the Docker containers.
+
+## About Project
+
+This project is a simple web application created with Symfony.
+
+It has been created starting from a complete [Docker Enviroment] (https://github.com/dunglas/symfony-docker) 
+and has been done following the documentation [Symfony 5: The Fast Track] (https://symfony.com/doc/current/the-fast-track/en/index.html)
+
+There are two entities "Conference" and "Comment", people can add comment to the conferences.
+There is also an admin panel,protected by authentication, where the administrator can create conference and comment.
+
+This project is for dev purpose only 
