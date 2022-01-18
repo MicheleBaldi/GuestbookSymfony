@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Conference Guestbook{% endblock %}
+
+{% block body %}
+    <h2>Give your feedback!</h2>
+
+    {% for conference in conferences %}
+        <h4>{{ conference }}</h4>
+        <p>
+        <!--La funzione path() genera il percorso di una pagina utilizzando il nome della Route nel controller. 
+        I valori dei parametri del percorso vengono passati come array Twig.-->
+            <a href="{{ path('conference', {slug:conference.slug }) }}">View</a> 
+        </p>
+    {% endfor %}
+{% endblock %}
