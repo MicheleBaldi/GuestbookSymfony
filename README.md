@@ -27,7 +27,8 @@ This project is for dev purpose only
 ## Note
 The admin panel is reachable from the url /admin but is protected by authentication.
 
-To create an admin user you need to execute this script on CLI of PHP container 
+To create an admin user you need to execute this script on CLI of PHP container:
+
 bin/console dbal:run-sql "INSERT INTO admin (id, username, roles, password) VALUES (nextval('admin_id_seq'),'admin', '[\"ROLE_ADMIN\"]', '\$2y\$13\$MlzmoZuKiFeVTkR0Z8sWNuSzS3Tz6YcgGlRM4KtzycKvLLOCyYF6O')"
 
-It will create an administrator user with username: admin and password: admin
+It will create an administrator user with username and password admin
